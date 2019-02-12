@@ -1,0 +1,26 @@
+.syntax--vue {
+  .syntax--tag.syntax--other {
+    color: lighten(@pink, 10%, relative) ;
+
+    .syntax--punctuation.syntax--definition.syntax--tag {
+      color: inherit;
+    }
+  }
+
+  .syntax--punctuation.syntax--separator,
+  .syntax--punctuation.syntax--seperator {
+    color: @gray-100;
+  }
+}
+
+.syntax--source.syntax--vue {
+  &.syntax--directive {
+    .syntax--delimiter {
+        color: @gray-100;
+    }
+
+    .syntax--brace {
+      color: @gray-200;
+    }
+  }
+}

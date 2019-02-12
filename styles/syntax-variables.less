@@ -1,0 +1,56 @@
+@import "colors";
+
+// Official Syntax Variables -----------------------------------
+
+// General colors
+@syntax-text-color:            @syntax-fg;
+@syntax-cursor-color:          @blue-2;
+@syntax-selection-color:       lighten(@syntax-background-color, 10%);
+@syntax-selection-flash-color: @syntax-accent;
+@syntax-background-color:      @syntax-bg;
+
+// Guide colors
+@syntax-wrap-guide-color:          @syntax-guide;
+@syntax-indent-guide-color:        @syntax-guide;
+@syntax-invisible-character-color: @syntax-guide;
+
+// For find and replace markers
+@syntax-result-marker-color:          fade(@syntax-accent, 24%);
+@syntax-result-marker-color-selected: @syntax-accent;
+
+// Gutter colors
+@syntax-gutter-text-color:                fade(@gray-400, 60%);
+@syntax-gutter-text-color-selected:       fade(@gray-400, 60%);
+@syntax-gutter-background-color:          fade(@syntax-bg, 60%);
+@syntax-gutter-background-color-selected: fade(lighten(@syntax-bg, 8%), 60%);
+
+// Git colors - For git diff info. i.e. in the gutter
+@syntax-color-renamed: @blue;
+@syntax-color-added: @pastel-green;
+@syntax-color-modified: @light-orange;
+@syntax-color-removed: @rose;
+
+// For language entity colors
+@syntax-color-variable:   @cyan;
+@syntax-color-constant:   @purple;
+@syntax-color-property:   @syntax-color-variable;
+@syntax-color-value:      @syntax-fg;
+@syntax-color-function:   @orange;
+@syntax-color-method:     @syntax-color-function;
+@syntax-color-class:      @pink;
+@syntax-color-keyword:    @pink;
+@syntax-color-tag:        @pink;
+@syntax-color-attribute:  @syntax-color-variable;
+@syntax-color-import:     @syntax-color-keyword;
+@syntax-color-snippet:    @orange; // ????
+
+
+// Custom Syntax Variables -----------------------------------
+// Don't use in packages
+
+@syntax-cursor-line: rgba(255, 255, 255, .05);
+
+@syntax-deprecated-fg: darken(@orange, 50%);
+@syntax-deprecated-bg: @orange;
+@syntax-illegal-fg:    @syntax-fg;
+@syntax-illegal-bg:    @pink;

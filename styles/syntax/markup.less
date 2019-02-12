@@ -1,0 +1,64 @@
+.syntax--markup {
+  &.syntax--bold {
+    color: @purple;
+    font-weight: 700;
+  }
+
+  &.syntax--italic {
+    color: @purple;
+    font-style: italic;
+  }
+
+  &.syntax--strike {
+    color: @pink;
+    text-decoration: line-through;
+
+    .syntax--punctuation {
+      font-weight: 700;
+    }
+  }
+
+  &.syntax--heading {
+    color: @pink;
+
+    .syntax--punctuation.syntax--definition.syntax--heading {
+      color: @purple;
+    }
+  }
+
+  &.syntax--link {
+    color: @cyan;
+  }
+
+  &.syntax--quote {
+    color: @purple;
+
+    .syntax--punctuation {
+      color: @gray-300;
+    }
+  }
+
+  &.syntax--ordered, &.syntax--unordered {
+    .syntax--punctuation {
+      color: @gray-200;
+    }
+  }
+
+  &.syntax--raw {
+    color: @yellow;
+  }
+
+  // Unsure where these occur
+  &.syntax--inserted {
+    color: @green;
+  }
+
+  &.syntax--changed {
+    color: @orange;
+  }
+
+  &.syntax--deleted {
+    color: @pink;
+    text-decoration: line-through;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "monokai-dark-soda-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "private": false,
+  "description": "Yet another monokai syntax theme.",
+  "repository": "https://github.com/CupOfTea696/atom-monokai-dark-soda-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}

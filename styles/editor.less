@@ -1,0 +1,128 @@
+// Editor styles (background, gutter, guides)
+
+atom-text-editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .line.cursor-line {
+    background-color: @syntax-cursor-line;
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    border-left: 2px solid @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+
+  .bracket-matcher .region {
+    box-sizing: border-box;
+    border-bottom: 1px solid @bright-green;
+    background: fade(@bright-green, 20%);
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .indent-guide-improved {
+    background-color: @gray-500;
+
+    &.indent-guide-stack {
+      background-color: lighten(@gray-500, 20%, relative);
+
+      &.indent-guide-active {
+        background-color: @syntax-indent-guide-color;
+      }
+    }
+  }
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  // find + replace
+  .find-result .region.region.region,
+  .current-result .region.region.region {
+    border-radius: 2px;
+    background-color: @syntax-result-marker-color;
+    transition: border-color .4s;
+  }
+  .find-result .region.region.region {
+    border: 2px solid transparent;
+  }
+  .current-result .region.region.region {
+    border: 2px solid @syntax-result-marker-color-selected;
+    transition-duration: .1s;
+  }
+
+  .gutter {
+    .line-number {
+      color: @syntax-gutter-text-color;
+      opacity: 1;
+      -webkit-font-smoothing: antialiased;
+
+      &.cursor-line,
+      &.bracket-matcher {
+        color: @syntax-gutter-text-color-selected;
+        background-color: @syntax-gutter-background-color-selected;
+      }
+
+      &.folded {
+        .icon-right {
+          color: @bright-green;
+          text-shadow: 0 0 10px @bright-green;
+          opacity: 1;
+        }
+      }
+
+      .icon-right {
+        visibility: visible;
+        opacity: 0;
+        transition: opacity .25s;
+      }
+    }
+
+    &:hover {
+      .line-number.foldable {
+        .icon-right {
+          opacity: 1;
+        }
+      }
+    }
+
+    &:not(.git-diff-icon) .line-number.git-line-removed {
+      &.git-line-removed::before {
+        bottom: -3px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 25px;
+        border-bottom: 1px dotted fade(@syntax-color-removed, 50%);
+        pointer-events: none;
+      }
+    }
+  }
+
+  .fold-marker:after {
+    content: '\2022\2022\2022';
+    width: 1.2em;
+    height: 1.2em;
+    padding-left: .2em * (1.2 / .8);
+    color: @bright-green;
+    text-shadow: 0 0 10px @bright-green;
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,21 @@
+.syntax--php.syntax--punctuation.syntax--section.syntax--embedded {
+  color: @green;
+}
+
+.syntax--source.syntax--php {
+  .syntax--meta {
+    &.syntax--use,
+    &.syntax--namespace {
+      .syntax--punctuation {
+        &.syntax--separator,
+        &.syntax--seperator {
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  .syntax--class.syntax--bracket {
+    color: @gray-100;
+  }
+}
