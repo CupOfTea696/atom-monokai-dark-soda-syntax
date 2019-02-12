@@ -2,10 +2,20 @@
   "name": "monokai-dark-soda-syntax",
   "theme": "syntax",
   "version": "0.0.0",
-  "private": false,
   "description": "Yet another monokai syntax theme.",
-  "repository": "https://github.com/CupOfTea696/atom-monokai-dark-soda-syntax",
+  "keywords": [
+    "atom",
+    "syntax-theme",
+    "monokai",
+    "dark soda"
+  ],
   "license": "MIT",
+  "author": "Frankie Wittevrongel <frankie@cupoftea.io>",
+  "repository": "https://github.com/CupOfTea696/atom-monokai-dark-soda-syntax",
+  "bugs": {
+    "url": "https://github.com/CupOfTea696/atom-monokai-dark-soda-syntax/issues"
+  },
+  "homepage": "https://atom.io/packages/monokai-dark-soda-syntax",
   "engines": {
     "atom": ">0.50.0"
   }
