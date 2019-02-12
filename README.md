@@ -2,6 +2,8 @@
 
 Yet another monokai syntax theme.
 
+<img width="1552" alt="screenshot" src="https://user-images.githubusercontent.com/7327050/52647142-0995b600-2edc-11e9-914f-7845c5022e64.png">
+
 ## Features
 
 Supports the following packages:
@@ -12,7 +14,7 @@ Enhanced support for the following languages:
 
  - AngularJS
  - C/C++
- - cp??
+ - C#
  - CSS
  - Elixir
  - GO
