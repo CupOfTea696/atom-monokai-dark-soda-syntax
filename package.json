@@ -1,7 +1,7 @@
 {
   "name": "monokai-dark-soda-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Yet another monokai syntax theme.",
   "keywords": [
     "atom",
